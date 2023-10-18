@@ -51,7 +51,87 @@
         </div>
     </nav>
     <main class="container-sm  py-5">
-        <h1 style="margin: 250px;">Aun por implementar</h1>
+        <form action="ruta_del_servidor" method="post">
+            <div class="row">
+                <div class="form-group col-12 col-lg-6 col-md-6">
+                    <label for="nombre_completo">Nombre Completo (Apellidos y Nombres):</label>
+                    <input type="text" class="form-control" id="nombre_completo" name="nombre_completo" required>
+                </div>
+            
+                <div class="form-group col-12 col-lg-6 col-md-6">
+                    <label for="correo_institucional">Correo Institucional:</label>
+                    <input type="email" class="form-control" id="correo_institucional" name="correo_institucional" required>
+                </div>
+            </div>
+        
+           <div class="row">
+            <div class="form-group col-12 col-lg-6 col-md-6">
+                <label for="contacto_celular">Contacto Celular:</label>
+                <input type="tel" class="form-control" id="contacto_celular" name="contacto_celular" required>
+            </div>
+        
+            <div class="form-group col-12 col-lg-6 col-md-6">
+                <label for="cedula">Cédula de Ciudadanía:</label>
+                <input type="text" class="form-control" id="cedula" name="cedula" required>
+            </div>
+           </div>
+        
+            <div class="form-group">
+                <label>Tiene conocimiento sobre microbiología:</label><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="conocimiento_microbiologia" id="conocimiento_si" value="si" required>
+                    <label class="form-check-label" for="conocimiento_si">Si</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="conocimiento_microbiologia" id="conocimiento_no" value="no">
+                    <label class="form-check-label" for="conocimiento_no">No</label>
+                </div>
+            </div>
+        
+            <div class="form-group">
+                <label>Ha realizado prácticas con microorganismos:</label><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="practicas_microorganismos" id="practicas_si" value="si" required>
+                    <label class="form-check-label" for="practicas_si">Si</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="practicas_microorganismos" id="practicas_no" value="no">
+                    <label class="form-check-label" for="practicas_no">No</label>
+                </div>
+            </div>
+        
+            <div class="form-group">
+                <label>Considera necesaria una capacitación práctica sobre la manipulación de microorganismos al inicio de su vinculación en el proyecto:</label><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="capacitacion_necesaria" id="capacitacion_si" value="si" required>
+                    <label class="form-check-label" for="capacitacion_si">Si</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="capacitacion_necesaria" id="capacitacion_no" value="no">
+                    <label class="form-check-label" for="capacitacion_no">No</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="3" required></textarea>
+            </div>
+            
+        
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+        
     </main>
 
     <footer class="bg-dark text-light text-center py-4  ">
