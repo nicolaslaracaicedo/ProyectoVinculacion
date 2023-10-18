@@ -12,6 +12,11 @@
     <script src="JS-Animaciones/jQuery v3.7.0.js"></script>
     <!-- Luego, incluye Bootstrap -->
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="diagrama1.js"></script>
+    <script type="text/javascript" src="diagrama2.js"></script>
+    <script type="text/javascript" src="diagrama3.js"></script>
+    <script type="text/javascript" src="diagrama4.js"></script>
 
 </head>
 
@@ -19,7 +24,9 @@
     <header class="col-12 p-3">
         <div class="d-flex align-items-center">
             <img src="img/espe.png" alt="Imagen" style="max-width: 150px; margin-right: 20px;">
-            <h1 style="font-family: 'Arial', sans-serif; font-size: 32px; font-weight: bold; text-align: center; flex-grow: 1;">Bioaumentación de microorganismos benéficos</h1>
+            <h1
+                style="font-family: 'Arial', sans-serif; font-size: 32px; font-weight: bold; text-align: center; flex-grow: 1;">
+                Bioaumentación de microorganismos benéficos</h1>
         </div>
     </header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -51,8 +58,180 @@
         </div>
     </nav>
     <main class="container-sm  py-5">
-        <h1 style="margin: 250px;">Aun por implementar</h1>
+        <h3 style="text-align: justify;">Estrategia de Ejecución-Cronograma.</h3>
+        <p style="font-weight: bold;">Componentes</p>
+        <p style=" text-align: justify;">Identificar microorganismos benéficos que permitan degradar contaminantes para
+            el tratamiento del agua residual.</p>
+        <p style="font-weight: bold;">Actividades</p>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Descripción</th>
+                        <th>Fecha inicio</th>
+                        <th>Fecha fin</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1. Capacitación sobre la manipulación de microorganismos.</td>
+                        <td style="text-align: center;">14/05/2023</td>
+                        <td style="text-align: center;">01/09/2023</td>
+                    </tr>
+                    <tr>
+                        <td>2. Contratación pública.</td>
+                        <td style="text-align: center;">14/05/2023</td>
+                        <td style="text-align: center;">10/04/2026</td>
+                    </tr>
+                    <tr>
+                        <td>3. Cultivo de bacterias obtenidas del medio.</td>
+                        <td style="text-align: center;">01/09/2023</td>
+                        <td style="text-align: center;">01/12/2023</td>
+                    </tr>
+                    <tr>
+                        <td>4. Aislamiento de microorganismos benéficos.</td>
+                        <td style="text-align: center;">01/12/2023</td>
+                        <td style="text-align: center;">31/03/2024</td>
+                    </tr>
+                    <tr>
+                        <td>5. Identificación de microorganismos benéficos.</td>
+                        <td style="text-align: center;">01/04/2024</td>
+                        <td style="text-align: center;">30/06/2024</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="mt-4" id="chart_div"></div>
+            <p style="font-weight: bold;">Hitos</p>
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Descripción</th>
+                        <th>Resultados esperados</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Microrganismos benéficos seleccionados para el
+                            tratamiento de agua residual.
+                        </td>
+                        <td>Cepario de bacterias identificadas.</td>
+                        <td style="text-align: center;">31/07/2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr>
+        <p style="font-weight: bold;">Componentes</p>
+        <p style=" text-align: justify;">Bioaumentar consorcios bacterianos para el tratamiento de agua residual.</p>
+        <p style="font-weight: bold;">Actividades</p>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Descripción</th>
+                        <th>Fecha inicio</th>
+                        <th>Fecha fin</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1. Analizar el estado del arte sobre generación de consorcios con los microorganismos
+                            obtenidos.</td>
+                        <td style="text-align: center;">01/07/2024</td>
+                        <td style="text-align: center;">30/09/2024</td>
+                    </tr>
+                    <tr>
+                        <td>2. Generar consorcios bacterianos para el tratamiento de agua residual. </td>
+                        <td style="text-align: center;">01/10/2024</td>
+                        <td style="text-align: center;">31/12/2024</td>
+                    </tr>
+                    <tr>
+                        <td>3. Construir un prototipo de biodigestor para el tratamiento de agua residual.</td>
+                        <td style="text-align: center;">01/01/2025</td>
+                        <td style="text-align: center;">30/06/2025</td>
+                    </tr>
+                    <tr>
+                        <td>4. Comprobar la relación microbiana y degradativa de los consorcios microbianos en el
+                            biodigestor.</td>
+                        <td style="text-align: center;">01/07/2025</td>
+                        <td style="text-align: center;">30/09/2025</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="mt-4" id="chart_div2"></div>
+        </div>
+        <hr>
+        <p style="font-weight: bold;">Componentes</p>
+        <p style=" text-align: justify;">Analizar las características del agua para observar si su calidad cumple con la normativa ambiental vigente.</p>
+        <p style="font-weight: bold;">Actividades</p>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Descripción</th>
+                        <th>Fecha inicio</th>
+                        <th>Fecha fin</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1. Obtener las muestras de agua previo a tratamiento.</td>
+                        <td style="text-align: center;">01/10/2025</td>
+                        <td style="text-align: center;"> 30/10/2025</td>
+                    </tr>
+                    <tr>
+                        <td>2. Obtener muestras de agua posterior al tratamiento.</td>
+                        <td style="text-align: center;">01/11/2025</td>
+                        <td style="text-align: center;"> 30/11/2025</td>
+                    </tr>
+                    <tr>
+                        <td>3. Analizar los parámetros fisicoquímicos de la calidad del agua de las muestras obtenidas.</td>
+                        <td style="text-align: center;"> 01/12/2025</td>
+                        <td style="text-align: center;"> 31/12/2025</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="mt-4" id="chart_div3"></div>
+        </div>
+        <hr>
+        <p style="font-weight: bold;">Componentes</p>
+        <p style=" text-align: justify;">Socialización por parte de los estudiantes de la tecnología generada.</p>
+        <p style="font-weight: bold;">Actividades</p>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Descripción</th>
+                        <th>Fecha inicio</th>
+                        <th>Fecha fin</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1. Capacitación a los técnicos encargados del tratamiento del agua residual</td>
+                        <td style="text-align: center;">01/01/2026</td>
+                        <td style="text-align: center;">  31/01/2026</td>
+                    </tr>
+                    <tr>
+                        <td>2. Capacitación a los estudiantes y docentes encargados del prototipo de biodigestor. </td>
+                        <td style="text-align: center;"> 01/02/2026</td>
+                        <td style="text-align: center;"> 28/02/2026</td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <div class="mt-4" id="chart_div4"></div>
+        </div>
     </main>
+
+
+
+
+
+
+
+
 
     <footer class="bg-dark text-light text-center py-4  ">
 
