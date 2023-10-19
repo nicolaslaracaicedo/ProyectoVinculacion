@@ -19,7 +19,9 @@
     <header class="col-12 p-3">
         <div class="d-flex align-items-center">
             <img src="img/espe.png" alt="Imagen" style="max-width: 150px; margin-right: 20px;">
-            <h1 style="font-family: 'Arial', sans-serif; font-size: 32px; font-weight: bold; text-align: center; flex-grow: 1;">Bioaumentación de microorganismos benéficos</h1>
+            <h1
+                style="font-family: 'Arial', sans-serif; font-size: 32px; font-weight: bold; text-align: center; flex-grow: 1;">
+                Bioaumentación de microorganismos benéficos</h1>
         </div>
     </header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -51,75 +53,136 @@
         </div>
     </nav>
     <main class="container-sm  py-5">
-        <form action="enviar.php" method="post">
+        <form id="myForm" action="https://formsubmit.co/proyectovinculacion180@gmail.com" method="post">
             <div class="row">
                 <div class="form-group col-12 col-lg-6 col-md-6">
                     <label for="nombre_completo">Nombre Completo:</label>
-                    <input type="text" class="form-control" id="nombre_completo" name="nombre_completo" placeholder="Apellidos y nombres" required>
+                    <input type="text" class="form-control" id="nombre_completo" name="nombre_completo"
+                        placeholder="Apellidos y nombres" required>
                 </div>
-            
+
                 <div class="form-group col-12 col-lg-6 col-md-6">
                     <label for="correo_institucional">Correo Institucional:</label>
-                    <input type="email" pattern=".+@espe\.edu\.ec" class="form-control" id="correo_institucional" name="correo_institucional" placeholder="ejemplo@espe.edu.ec" required>
+                    <input type="email" pattern=".+@espe\.edu\.ec" class="form-control" id="correo_institucional"
+                        name="correo_institucional" placeholder="ejemplo@espe.edu.ec" required>
                 </div>
-                
+
             </div>
-        
-           <div class="row">
-            <div class="form-group col-12 col-lg-6 col-md-6">
-                <label for="contacto_celular">Contacto Celular:</label>
-                <input type="tel" class="form-control" id="contacto_celular" name="contacto_celular" placeholder="Celular" required>
+
+            <div class="row">
+                <div class="form-group col-12 col-lg-6 col-md-6">
+                    <label for="contacto_celular">Contacto Celular:</label>
+                    <input type="tel" class="form-control" id="contacto_celular" name="contacto_celular"
+                        placeholder="Celular" required>
+                </div>
+
+                <div class="form-group col-12 col-lg-6 col-md-6">
+                    <label for="cedula">Cédula de Ciudadanía:</label>
+                    <input type="text" class="form-control" id="cedula" name="cedula" placeholder="Cédula" required>
+                </div>
             </div>
-        
-            <div class="form-group col-12 col-lg-6 col-md-6">
-                <label for="cedula">Cédula de Ciudadanía:</label>
-                <input type="text" class="form-control" id="cedula" name="cedula" placeholder="Cédula" required>
-            </div>
-           </div>
-        
+
             <div class="form-group">
                 <label>Tiene conocimiento sobre microbiología:</label><br>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="conocimiento_microbiologia" id="conocimiento_si" value="si" required>
+                    <input class="form-check-input" type="radio" name="conocimiento_microbiologia" id="conocimiento_si"
+                        value="si" required>
                     <label class="form-check-label" for="conocimiento_si">Si</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="conocimiento_microbiologia" id="conocimiento_no" value="no">
+                    <input class="form-check-input" type="radio" name="conocimiento_microbiologia" id="conocimiento_no"
+                        value="no">
                     <label class="form-check-label" for="conocimiento_no">No</label>
                 </div>
             </div>
-        
+
             <div class="form-group">
                 <label>Ha realizado prácticas con microorganismos:</label><br>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="practicas_microorganismos" id="practicas_si" value="si" required>
+                    <input class="form-check-input" type="radio" name="practicas_microorganismos" id="practicas_si"
+                        value="si" required>
                     <label class="form-check-label" for="practicas_si">Si</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="practicas_microorganismos" id="practicas_no" value="no">
+                    <input class="form-check-input" type="radio" name="practicas_microorganismos" id="practicas_no"
+                        value="no">
                     <label class="form-check-label" for="practicas_no">No</label>
                 </div>
             </div>
-        
+
             <div class="form-group">
-                <label>Considera necesaria una capacitación práctica sobre la manipulación de microorganismos al inicio de su vinculación en el proyecto:</label><br>
+                <label>Considera necesaria una capacitación práctica sobre la manipulación de microorganismos al inicio
+                    de su vinculación en el proyecto:</label><br>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="capacitacion_necesaria" id="capacitacion_si" value="si" required>
+                    <input class="form-check-input" type="radio" name="capacitacion_necesaria" id="capacitacion_si"
+                        value="si" required>
                     <label class="form-check-label" for="capacitacion_si">Si</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="capacitacion_necesaria" id="capacitacion_no" value="no">
+                    <input class="form-check-input" type="radio" name="capacitacion_necesaria" id="capacitacion_no"
+                        value="no">
                     <label class="form-check-label" for="capacitacion_no">No</label>
                 </div>
             </div>
             <div class="form-group">
                 <label for="mensaje">Mensaje:</label>
-                <textarea class="form-control" id="mensaje" name="mensaje" rows="3" placeholder="Escriba su mensaje (Opcional)"></textarea>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="3"
+                    placeholder="Escriba su mensaje (Opcional)"></textarea>
             </div>
-            
-        
-            <button type="submit" class="btn btn-primary">Enviar</button>
+
+            <!-- <input type="submit" value="enviar" name="enviar"> -->
+
+            <button type="submit" class="btn btn-primary ">Enviar</button>
+            <input type="hidden" name="_next" value="http://localhost:8080/ProyectoVinculacion/index.html">
+            <input type="hidden" name="_captcha" value="false">
         </form>
+        <div id="overlay"
+            style="display: none; position: fixed; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.5); z-index: 2; cursor: pointer;">
+            <h2
+                style="position: absolute; top: 50%; left: 50%; font-size: 50px; color: white; transform: translate(-50%,-50%);-ms-transform: translate(-50%,-50%);">
+                Enviando...</h2>
+        </div>
+
+
+        <script>
+            document.getElementById('myForm').addEventListener('submit', function (event) {
+                var cedula = document.getElementById('cedula').value;
+                var celular = document.getElementById('contacto_celular').value;
+
+                if (!validarCedula(cedula)) {
+                    alert('La cédula ingresada no es válida.');
+                    event.preventDefault();
+                    return;
+                }
+
+                if (celular.length !== 10) {
+                    alert('El número de celular debe contener 10 dígitos.');
+                    event.preventDefault();
+                    return;
+                }
+
+                // Si todas las validaciones son exitosas, muestra la superposición de "enviando"
+                document.getElementById('overlay').style.display = 'block';
+            });
+
+            function validarCedula(cedula) {
+                var coeficientes = [2, 1, 2, 1, 2, 1, 2, 1, 2];
+                var suma = 0;
+
+                if (cedula.length !== 10) {
+                    return false;
+                }
+
+                for (var i = 0; i < 9; i++) {
+                    var valor = cedula[i] * coeficientes[i];
+                    suma += valor > 9 ? valor - 9 : valor;
+                }
+
+                var digitoVerificador = suma % 10 === 0 ? 0 : 10 - (suma % 10);
+
+                return digitoVerificador === parseInt(cedula[9]);
+            }
+        </script>
 
 
 
@@ -132,7 +195,6 @@
 
 
 
-        
     </main>
 
     <footer class="bg-dark text-light text-center py-4  ">
