@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="estilo_general.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="carrusel.css">
     <script src="script_general.js"></script>
+    <script src="js/bootstrap.bundle.js.map"></script>
     <!-- Incluye jQuery primero -->
     <script src="JS-Animaciones/jQuery v3.7.0.js"></script>
     <!-- Luego, incluye Bootstrap -->
@@ -25,7 +28,7 @@
                 Bioaumentación de microorganismos benéficos</h1>
         </div>
     </header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="border-bottom: 2px solid #696767;">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -61,72 +64,109 @@
                 afectan a las fuentes
                 hídricas de la comuna Chigüilpe del cantón Santo Domingo.</h3>
         </center>
-        <p style="font-weight: bold;">
-            Descripción de la situación actual del área de intervención del proyecto
-        </p>
-        <p style=" text-align: justify;">
-            En el Ecuador existe una problemática habitual que tiene que ver directamente con el agua que debe ser
-            tratada y
-            en especial con el tratamiento de aguas residuales las cuales contienen alta carga de contaminantes. La
-            Ciudad de Santo Domingo
-            de los Tsáchilas no está libre de este inconveniente por lo que es necesario el tratamiento adecuado de las
-            aguas residuales ya
-            que estas son desembocadas en los ríos que se encuentran en sus alrededores (Chigüilpe, Baba, etc.)
-            contaminando así el medio
-            ambiente y generando a la vez un problema de salud pública por las enfermedades que podría causar a través
-            de la gestión
-            inadecuada de estas aguas. Por ejemplo, el 20 de septiembre del 2016 en el río Chigüilpe se evidenció una
-            alta contaminación del
-            río, entre los contaminantes encontrados los coliformes fecales, aceites y grasas, hierro, amoníaco,
-            fenoles, zinc, aluminio,
-            arsénico, vario, sulfato, cobre, fosfatos fueron los más destacables. Esto producto de que las lubricadoras,
-            lavadoras de vehículos,
-            urbanizaciones, cooperativas de viviendas, haciendas ganaderas, empresas de faenamiento de ganado y cerdo y
-            a una extractora
-            de aceite descargaran directamente sus vertidos a las fuentes hídricas, provocando una masiva muerte de las
-            especies que habitan
-            en el río. Este hecho se atribuyó a la falta de mantenimiento y el colapso de sistemas de tratamiento de
-            aguas residuales en las
-            urbanizaciones.
-            En base a estos antecedentes, este proyecto pretende aportar, con la bioaumentación de bacterias benéficas
-            que ayuden en el
-            tratamiento de aguas residuales, obteniendo de esta manera el tratamiento adecuado y con ello un agua de
-            calidad, bajo los
-            parámetros que determinan su tratamiento. Además de contribuir en una reducción mayor o eliminación total de
-            la contaminación
-            ambiental y con ello las enfermedades que pudieren surgir de la mala gestión
-        </p>
 
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"
+                        style="display: flex; align-items: center; gap: 10px;">
+                        <img src="img/descripción.png" alt="" width="50px" height="50px">
+                        <p style="font-weight: bold; margin: 0;">Descripción de la situación actual del área de
+                            intervención del proyecto</p>
+                    </button>
 
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p style=" text-align: justify;">
+                            En el Ecuador existe una problemática habitual que tiene que ver directamente con el agua
+                            que debe ser tratada y
+                            en especial con el tratamiento de aguas residuales las cuales contienen alta carga de
+                            contaminantes.
+                        </p>
+                        <p style=" text-align: justify;">
+                            La Ciudad de Santo Domingo de los Tsáchilas no está libre de este inconveniente por lo que
+                            es necesario el tratamiento
+                            adecuado de las aguas residuales ya que estas son desembocadas en los ríos que se encuentran
+                            en sus alrededores (Chigüilpe,
+                            Baba, etc.) contaminando así el medio ambiente y generando a la vez un problema de salud
+                            pública por las enfermedades que podría
+                            causar a través de la gestión inadecuada de estas aguas.
+                        </p>
+                        <p style=" text-align: justify;">
+                            Por ejemplo, el 20 de septiembre del 2016 en el río Chigüilpe se evidenció una alta
+                            contaminación del
+                            río, entre los contaminantes encontrados los coliformes fecales, aceites y grasas, hierro,
+                            amoníaco, fenoles, zinc, aluminio, arsénico, vario, sulfato, cobre, fosfatos fueron los más
+                            destacables. Esto producto de que
+                            las lubricadoras, lavadoras de vehículos, urbanizaciones, cooperativas de viviendas,
+                            haciendas ganaderas, empresas de faenamiento de
+                            ganado y cerdo y a una extractora de aceite descargaran directamente sus vertidos a las
+                            fuentes hídricas, provocando una
+                            masiva muerte de las especies que habitan en el río.
+                        </p>
+                        <p style=" text-align: justify;">
+                            Este hecho se atribuyó a la falta de mantenimiento y el colapso de sistemas de tratamiento
+                            de
+                            aguas residuales en las urbanizaciones.
+                        </p>
+                        <p style=" text-align: justify;">
+                            En base a estos antecedentes, este proyecto pretende aportar, con la bioaumentación de
+                            bacterias benéficas que ayuden en el tratamiento de aguas residuales, obteniendo de esta
+                            manera el tratamiento adecuado y con
+                            ello un agua de calidad, bajo los
+                            parámetros que determinan su tratamiento. Además de contribuir en una reducción mayor o
+                            eliminación total de la contaminación
+                            ambiental y con ello las enfermedades que pudieren surgir de la mala gestión.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"
+                        style="display: flex; align-items: center; gap: 10px;">
+                        <img src="img/diagnostico.png" alt="" width="50px" height="50px">
+                        <p style="font-weight: bold; margin: 0;">Diagnóstico del problema</p>
+                    </button>
 
-
-
-
-
-
-
-
-        <p style="font-weight: bold;">
-            Diagnóstico del problema
-        </p>
-        <p style=" text-align: justify;">
-            El GAD Provincial tiene como competencia controlar el cumplimiento de los parámetros ambientales y la
-            aplicación de normas
-            técnicas de los componentes agua, suelo, aire y ruido, motivo por el cual se realiza la presente propuesta
-            para colaborar el
-            cumplimiento de los parámetros de las Plantas de Tratamiento de Agua Residual de la provincia.
-            De acuerdo con una información levantada por parte de EPMAPA-SD del año 2020, se identificaron 172 plantas
-            de tratamiento de
-            agua residual en la provincia de Santo Domingo, de las cuales 100 se encuentran en estado “bueno”, 29
-            plantas se encuentran en
-            estado “malo”, 35 en estado “regular”, 4 plantas en estado “sin servicio” y 4 plantas en estado
-            “desconocido”. Además, existen 9
-            plantas de tratamiento distribuidas en la ciudad de Santo Domingo que pertenecen a la parroquia urbana Santo
-            Domingo GAD, de
-            estas 9 ninguna se encuentra al 100%, debido a que están mal ubicadas o se encuentran colapsadas afectando a
-            la comuna
-            Chigüilpe
-        </p>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p style=" text-align: justify;">
+                            El GAD Provincial tiene como competencia controlar el cumplimiento de los parámetros
+                            ambientales y la
+                            aplicación de normas
+                            técnicas de los componentes agua, suelo, aire y ruido, motivo por el cual se realiza la
+                            presente propuesta
+                            para colaborar el
+                            cumplimiento de los parámetros de las Plantas de Tratamiento de Agua Residual de la
+                            provincia.
+                            De acuerdo con una información levantada por parte de EPMAPA-SD del año 2020, se
+                            identificaron 172 plantas
+                            de tratamiento de
+                            agua residual en la provincia de Santo Domingo, de las cuales 100 se encuentran en estado
+                            “bueno”, 29
+                            plantas se encuentran en
+                            estado “malo”, 35 en estado “regular”, 4 plantas en estado “sin servicio” y 4 plantas en
+                            estado
+                            “desconocido”. Además, existen 9
+                            plantas de tratamiento distribuidas en la ciudad de Santo Domingo que pertenecen a la
+                            parroquia urbana Santo
+                            Domingo GAD, de
+                            estas 9 ninguna se encuentra al 100%, debido a que están mal ubicadas o se encuentran
+                            colapsadas afectando a
+                            la comuna
+                            Chigüilpe.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <hr>
         <div>
 
@@ -150,105 +190,186 @@
         <hr>
 
         <h3>Impactos del proyecto</h3>
-        <p style="font-weight: bold;">
-            Impacto económico
-        </p>
-        <p style=" text-align: justify;">
-            Estudios demuestran que el deterioro de la calidad del agua reduce en un tercio el
-            crecimiento económico en algunos países. Por tanto, al mejorar la calidad de las aguas
-            residuales de la comunidad Chigüilpe y las zonas urbano-marginales de la parroquia Santo
-            Domingo traería beneficios en las condiciones de salud de la población, aumentaría la
-            producción de alimentos y reduciría los índices de pobreza. De este modo, las poblaciones
-            crecerían más rápido en forma equitativa y ambientalmente sostenible al crearse fuentes de
-            trabajo relacionado con las actividades turísticas y agrícolas.
-        </p>
-        <p style="font-weight: bold;">
-            Impacto social
-        </p>
-        <p style=" text-align: justify;">
-            La falta de agua en cantidad y calidad provoca que poblaciones enteras se enfrente con el
-            fin de adueñarse de fuentes hídricas limpias y seguras. El tratamiento del agua residual
-            impide que se descargue directamente a las fuentes de agua, evitando perjudicar la salud de
-            la población y convirtiendo las fuentes de agua en un recurso patrimonial estratégico.
-        </p>
-        <p style="font-weight: bold;">
-            Impacto científico
-        </p>
-        <p style=" text-align: justify;">
-            El presente proyecto permite obtener nuevas cepas microbiológicas que degraden materia
-            orgánica y contaminantes del agua residual, creando consorcios bacterianos que pueden
-            ser replicados en diferentes plantas de tratamiento, a su vez, este conocimiento práctico se
-            verá reflejado en artículos científicos.
-        </p>
-        <p style="font-weight: bold;">
-            Impacto político
-        </p>
-        <p style=" text-align: justify;">
-            El presente proyecto se ha generado en base al convenio establecido entre el GAD
-            Provincial de Santo Domingo y la ESPE, además de la participación con EPMAPA SD
-            permitiendo articular acciones que permitan llevar a cabo proyectos sociales entre los
-            estudiantes y la población de la ciudad de Santo Domingo que permita el adecuado
-            desarrollo de las comunidades y zonas rurales de Santo Domingo.
-        </p>
-        <p style="font-weight: bold;">
-            Impacto ambiental
-        </p>
-        <p style=" text-align: justify;">
-            El presente proyecto a través de la bioaumentación de bacterias para la degradación de
-            materia orgánica y contaminantes evita que los desechos contaminen el ambiente,
-            protegiendo las fuentes hídricas y evitando la contaminación visual y química de los
-            diferentes sistemas ambientales.
-        </p>
-        <p style="font-weight: bold;">
-            Otro impacto
-        </p>
-        <p style=" text-align: justify;">
-            El proyecto a través de su implementación permite mantener la calidad del agua para su
-            utilización de zonas rurales aledañas, evitando el colapso de las plantas de tratamiento y
-            disminuyendo los olores desagradables existen en el lugar. Además, permite en un futuro
-            reutilizar el agua con otros fines productivos (riego y agrícolas). Y evitar una escasez del
-            recurso para las próximas generaciones.
-        </p>
+        <div id="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <input type="radio" name="slider" id="slide4">
+            <input type="radio" name="slider" id="slide5">
+            <input type="radio" name="slider" id="slide6">
+            <div id="slides">
+                <div id="overflow">
+                    <div class="inner">
+                        <div class="slide slide_1">
+                            <div class="paragraph-container">
+                                <h2 style="font-weight: bold;">Impacto económico</h2>
+                                <p style="text-align: justify;">
+                                    Estudios demuestran que el deterioro de la calidad del agua reduce en un tercio el
+                                    crecimiento económico en algunos países. Por tanto, al mejorar la calidad de las
+                                    aguas
+                                    residuales de la comunidad Chigüilpe y las zonas urbano-marginales de la parroquia
+                                    Santo
+                                    Domingo traería beneficios en las condiciones de salud de la población, aumentaría
+                                    la
+                                    producción de alimentos y reduciría los índices de pobreza. De este modo, las
+                                    poblaciones
+                                    crecerían más rápido en forma equitativa y ambientalmente sostenible al crearse
+                                    fuentes de
+                                    trabajo relacionado con las actividades turísticas y agrícolas.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="slide slide_2">
+                            <div class="paragraph-container">
+                                <h2 style="font-weight: bold;"> Impacto social</h2>
+                                <p style="text-align: justify;">
+                                    La falta de agua en cantidad y calidad provoca que poblaciones enteras se enfrente
+                                    con el
+                                    fin de adueñarse de fuentes hídricas limpias y seguras. El tratamiento del agua
+                                    residual
+                                    impide que se descargue directamente a las fuentes de agua, evitando perjudicar la
+                                    salud de
+                                    la población y convirtiendo las fuentes de agua en un recurso patrimonial
+                                    estratégico.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slide slide_3">
+                            <div class="paragraph-container">
+                                <h2 style="font-weight: bold;"> Impacto científico</h2>
+                                <p style=" text-align: justify;">
+                                    El presente proyecto permite obtener nuevas cepas microbiológicas que degraden
+                                    materia
+                                    orgánica y contaminantes del agua residual, creando consorcios bacterianos que
+                                    pueden
+                                    ser replicados en diferentes plantas de tratamiento, a su vez, este conocimiento
+                                    práctico se
+                                    verá reflejado en artículos científicos.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slide slide_4">
+                            <div class="paragraph-container">
+                                <h2 style="font-weight: bold;"> Impacto político</h2>
+                                <p style=" text-align: justify;">
+                                    El presente proyecto se ha generado en base al convenio establecido entre el GAD
+                                    Provincial de Santo Domingo y la ESPE, además de la participación con EPMAPA SD
+                                    permitiendo articular acciones que permitan llevar a cabo proyectos sociales entre
+                                    los
+                                    estudiantes y la población de la ciudad de Santo Domingo que permita el adecuado
+                                    desarrollo de las comunidades y zonas rurales de Santo Domingo.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slide slide_5">
+                            <div class="paragraph-container">
+                                <h2 style="font-weight: bold;">Impacto ambiental</h2>
+                                <p style=" text-align: justify;">
+                                    El presente proyecto a través de la bioaumentación de bacterias para la degradación
+                                    de
+                                    materia orgánica y contaminantes evita que los desechos contaminen el ambiente,
+                                    protegiendo las fuentes hídricas y evitando la contaminación visual y química de los
+                                    diferentes sistemas ambientales.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slide slide_6">
+                            <div class="paragraph-container">
+                                <h2 style="font-weight: bold;"> Otro impacto</h2>
+                                <p style=" text-align: justify;">
+                                    El proyecto a través de su implementación permite mantener la calidad del agua para
+                                    su
+                                    utilización de zonas rurales aledañas, evitando el colapso de las plantas de
+                                    tratamiento y
+                                    disminuyendo los olores desagradables existen en el lugar. Además, permite en un
+                                    futuro
+                                    reutilizar el agua con otros fines productivos (riego y agrícolas). Y evitar una
+                                    escasez del
+                                    recurso para las próximas generaciones.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="controls">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+                <label for="slide5"></label>
+                <label for="slide6"></label>
+            </div>
+            <div id="bullets" >
+                <label for="slide1" style="width: 25px; height: 25px;"></label>
+                <label for="slide2" style="width: 25px; height: 25px;"></label>
+                <label for="slide3" style="width: 25px; height: 25px;"></label>
+                <label for="slide4" style="width: 25px; height: 25px;"></label>
+                <label for="slide5" style="width: 25px; height: 25px;"></label>
+                <label for="slide6" style="width: 25px; height: 25px;"></label>
+            </div>
+        </div>
+
+
         <hr>
         <h3>Alineamiento del proyecto</h3>
-        
-        <p style="font-weight: bold;">
-            ¿A qué objetivos Milenio apunta el Proyecto?
-        </p>
-        <p style="font-weight: bold;">
-            Milenio
-        </p>
-        <ul>
-            <li style=" text-align: justify;">Garantizar la disponibilidad de agua y su gestión sostenible y el
-                saneamiento para todos.</li>
-        </ul>
-        <p style="font-weight: bold;">
-            Metas
-        </p>
-        <ul>
-            <li style=" text-align: justify;"> De aquí a 2030, lograr el acceso a servicios de saneamiento e higiene
-                adecuados y equitativos para
-                todos y poner fin a la
-                defecación al aire libre, prestando especial atención a las necesidades de las mujeres y las niñas y las
-                personas en
-                situaciones de vulnerabilidad.</li>
-            <li style=" text-align: justify;">De aquí a 2030, mejorar la calidad del agua reduciendo la contaminación,
-                eliminando el vertimiento y
-                minimizando la
-                emisión de productos químicos y materiales peligrosos, reduciendo a la mitad el porcentaje de aguas
-                residuales sin tratar y
-                aumentando considerablemente el reciclado y la reutilización sin riesgos a nivel mundial.</li>
-            <li style=" text-align: justify;"> De aquí a 2030, aumentar considerablemente el uso eficiente de los
-                recursos hídricos en todos los
-                sectores y asegurar la
-                sostenibilidad de la extracción y el abastecimiento de agua dulce para hacer frente a la escasez de agua
-                y reducir
-                considerablemente el número de personas que sufren falta de agua.</li>
-        </ul>
-        <hr>
-        <p style="font-weight: bold;">
-            ¿A qué objetivo u objetivos del Plan de Desarrollo se respalda el Proyecto?
-        </p>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <p style="font-weight: bold;">
+                        ¿A qué objetivos Milenio apunta el Proyecto?
+                    </p>
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p style="font-weight: bold;">
+                        Milenio
+                    </p>
+                    <ul>
+                        <li style=" text-align: justify;">Garantizar la disponibilidad de agua y su gestión sostenible y el
+                            saneamiento para todos.</li>
+                    </ul>
+                    <p style="font-weight: bold;">
+                        Metas
+                    </p>
+                    <ul>
+                        <li style=" text-align: justify;"> De aquí a 2030, lograr el acceso a servicios de saneamiento e higiene
+                            adecuados y equitativos para
+                            todos y poner fin a la
+                            defecación al aire libre, prestando especial atención a las necesidades de las mujeres y las niñas y las
+                            personas en
+                            situaciones de vulnerabilidad.</li>
+                        <li style=" text-align: justify;">De aquí a 2030, mejorar la calidad del agua reduciendo la contaminación,
+                            eliminando el vertimiento y
+                            minimizando la
+                            emisión de productos químicos y materiales peligrosos, reduciendo a la mitad el porcentaje de aguas
+                            residuales sin tratar y
+                            aumentando considerablemente el reciclado y la reutilización sin riesgos a nivel mundial.</li>
+                        <li style=" text-align: justify;"> De aquí a 2030, aumentar considerablemente el uso eficiente de los
+                            recursos hídricos en todos los
+                            sectores y asegurar la
+                            sostenibilidad de la extracción y el abastecimiento de agua dulce para hacer frente a la escasez de agua
+                            y reducir
+                            considerablemente el número de personas que sufren falta de agua.</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <p style="font-weight: bold;">
+                        ¿A qué objetivo u objetivos del Plan de Desarrollo se respalda el Proyecto?
+                    </p>
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                 
         <p style="font-weight: bold;">
             Objetivos del Plan de Desarrollo
         </p>
@@ -304,63 +425,92 @@
                 </tbody>
             </table>
         </div>
-        <hr>
-        <p style="font-weight: bold;">
-            ¿A qué objetivos Estratégicos Institucionales apunta el Proyecto?
-        </p>
-        <p style="font-weight: bold;">
-            Perspectivas
-        </p>
-        <ul>
-            <li style=" text-align: justify;"> OE3 Incrementar la vinculación con la sociedad, ejecución de programas o
-                proyectos de impacto en sus diferentes líneas
-                operativas acorde a la oferta académica y fomento de la responsabilidad social universitaria externa
-            </li>
-        </ul>
-        <p style="font-weight: bold;">
-            Objetivos
-        </p>
-        <ul>
-            <li style=" text-align: justify;">OE3 Incrementar la vinculación con la sociedad, ejecución de programas o
-                proyectos de impacto en sus diferentes líneas
-                operativas acorde a la oferta académica y fomento de la responsabilidad social universitaria externa.
-            </li>
-        </ul>
-        <hr>
-        <p style="font-weight: bold;">
-            ¿A qué lineas y sublineas de investigacion apunta el proyecto?
-        </p>
-        <p style="font-weight: bold;">Líneas de Investigación.</p>
-        <ul>
-            <li>Ciencias de los Microorganismos.</li>
-        </ul>
-        <p style="font-weight: bold;">Sublíneas de Investigación.</p>
-        <ul>
-            <li>Ciencias de los Microorganismos.</li>
-        </ul>
-        <hr>
-        <p style="font-weight: bold;">
-            ¿A qué objetivos Unesco apunta el Proyecto?
-        </p>
-        <p style="font-weight: bold;">Campo Amplio.</p>
-        <ul>
-            <li>Ciencias Físicas, Ciencias Naturales, Matemáticas y Estadística.</li>
-        </ul>
-        <p style="font-weight: bold;">Campo Especifico.</p>
-        <ul>
-            <li>Medio Ambiente.</li>
-        </ul>
-        <p style="font-weight: bold;">Campo Detallado.</p>
-        <ul>
-            <li>Ciencias Ambientales.
-            </li>
-        </ul>
 
-
-
-
-
-
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <p style="font-weight: bold;">
+                        ¿A qué objetivos Estratégicos Institucionales apunta el Proyecto?
+                    </p>
+            
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p style="font-weight: bold;">
+                        Perspectivas
+                    </p>
+                    <ul>
+                        <li style=" text-align: justify;"> OE3 Incrementar la vinculación con la sociedad, ejecución de programas o
+                            proyectos de impacto en sus diferentes líneas
+                            operativas acorde a la oferta académica y fomento de la responsabilidad social universitaria externa
+                        </li>
+                    </ul>
+                    <p style="font-weight: bold;">
+                        Objetivos
+                    </p>
+                    <ul>
+                        <li style=" text-align: justify;">OE3 Incrementar la vinculación con la sociedad, ejecución de programas o
+                            proyectos de impacto en sus diferentes líneas
+                            operativas acorde a la oferta académica y fomento de la responsabilidad social universitaria externa.
+                        </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    <p style="font-weight: bold;">
+                        ¿A qué lineas y sublineas de investigacion apunta el proyecto?
+                    </p>
+                </button>
+              </h2>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p style="font-weight: bold;">Líneas de Investigación.</p>
+                    <ul>
+                        <li>Ciencias de los Microorganismos.</li>
+                    </ul>
+                    <p style="font-weight: bold;">Sublíneas de Investigación.</p>
+                    <ul>
+                        <li>Ciencias de los Microorganismos.</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    <p style="font-weight: bold;">
+                        ¿A qué objetivos Unesco apunta el Proyecto?
+                    </p>
+                </button>
+              </h2>
+              <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p style="font-weight: bold;">Campo Amplio.</p>
+                    <ul>
+                        <li>Ciencias Físicas, Ciencias Naturales, Matemáticas y Estadística.</li>
+                    </ul>
+                    <p style="font-weight: bold;">Campo Especifico.</p>
+                    <ul>
+                        <li>Medio Ambiente.</li>
+                    </ul>
+                    <p style="font-weight: bold;">Campo Detallado.</p>
+                    <ul>
+                        <li>Ciencias Ambientales.
+                        </li>
+                    </ul>
+            
+                </div>
+              </div>
+            </div>
+          </div>
+          
 
     </main>
 
@@ -419,6 +569,7 @@
             &copy; 2023 Vinculación| Todos los derechos reservados
         </div>
     </footer>
+
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGbtFWzoX94NDXPKnpogIssz_O2dMPJ9I&callback=initMap"
         async defer></script>
     <button id="scrollToTop" class="btn btn-primary" title="Ir arriba">↑</button>

@@ -1,3 +1,4 @@
+
 header {
     background-image: linear-gradient(#3399FF, #66FFFF);
 }
@@ -10,6 +11,9 @@ footer {
 ul.navbar-nav li a {
     font-weight: bold;
 
+}
+nav{
+    border-bottom: 2px solid #000000;
 }
 *{
     padding: 0;
@@ -76,7 +80,6 @@ ul.navbar-nav li a {
     background-color: #0056b3;
 }
 
-
 svg {
     position: absolute;
     top: 0;
@@ -94,6 +97,7 @@ background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
     height: 0;
 }
 
+
 .embed-responsive iframe {
     position: absolute;
     width: 100%;
@@ -103,3 +107,4 @@ background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
 th{
     text-align: center;
 }
+
