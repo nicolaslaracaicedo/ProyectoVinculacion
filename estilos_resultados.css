@@ -116,13 +116,6 @@ h2 span{
     transform: translateX(-50%);
     z-index: 10000;
 }
-
-
-
-
-
-
-
  /* Estilos para la imagen a tamaño completo */
  #fulImgBox {
     display: none;

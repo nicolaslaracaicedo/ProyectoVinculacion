@@ -24,7 +24,7 @@
                 Bioaumentación de microorganismos benéficos</h1>
         </div>
     </header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light"  style="border-bottom: 2px solid #696767;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="border-bottom: 2px solid #696767;">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -72,40 +72,87 @@
         <p style="font-weight: bold;">
             ¿Qué perdería el país si el proyecto no se ejecuta en este periodo?
         </p>
-        <p style=" text-align: justify;">
+        <p id="resumen" style="text-align: justify;">
             Reducción de ingresos económicos por turismo, con fuentes hídricas contaminadas el ecoturismo se ve mermado
-            por un rechazo
-            de la población a realizar cualquier actividad recreativa en sus alrededores.
-            Mayor inversión en el manejo de las hidroeléctricas del país, la acumulación de los sedimentos en los
-            embalses provoca que se
-            reduzca el volumen útil de agua, además, de deterioro en los equipos.
-            Navegabilidad de sus ríos, debido a la contaminación ambiental algunas fuentes de agua pierden su
-            navegabilidad provocando
-            pérdidas económicas a nivel pesquero.
-            Perdidas en el sector agrícolas, fuentes hídricas contaminadas no se pueden aprovechar en la cadena de
-            producción.
-            Mayor inversión en salud pública se conoce que al usar agua de mala calidad se incrementa el riesgo de
-            enfermedades a la
-            población.
-            Desaparición de la vegetación natural, así como la muerte de fauna debido a la contaminación de ríos,
-            canales y lagos por las
-            diferentes actividades productivas al generar diversos desechos durante su desarrollo.
-            Por otra parte, la descarga directa de aguas residuales a cuerpos de agua limita el uso del recurso para
-            diferentes procesos
-            productivos como el riego o la pesca, el consumo de agua potable y recreación de contacto.
-            Además, la falta de coordinación entre usuarios y autoridades, aunado a la falta de un adecuado tratamiento
-            y reúso de las aguas
-            residuales generadas producirán una sobreexplotación del recurso, la contaminación de ecosistemas, la
-            degradación de los suelos
-            e impacto negativo sobre la seguridad alimentaria.
-            Así, el presente proyecto de bioaumentación de microorganismos benéficos para el saneamiento de las aguas
-            residuales permitirá
-            asegurar su recolección, transporte, tratamiento y adecuada disposición en los cuerpos receptores, en
-            condiciones que no
-            perjudiquen al medio ambiente y la salud de la población, disminuyendo los altos costos derivados en materia
-            de salud,
-            ambientales y económicos que se genera por su inadecuado o nulo tratamiento.
+            por un rechazo de la población a realizar cualquier actividad recreativa en sus alrededores...
         </p>
+        <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#textoCompletoModal">Seguir
+            leyendo</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="textoCompletoModal" tabindex="-1" role="dialog"
+            aria-labelledby="textoCompletoModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="textoCompletoModalLabel">¿Qué perdería el país si el proyecto no se ejecuta en este periodo?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p id="textoCompleto" style="text-align: justify;">
+                            Reducción de ingresos económicos por turismo, con fuentes hídricas contaminadas el
+                            ecoturismo se ve mermado
+                            por un rechazo
+                            de la población a realizar cualquier actividad recreativa en sus alrededores.
+                            Mayor inversión en el manejo de las hidroeléctricas del país, la acumulación de los
+                            sedimentos en los
+                            embalses provoca que se
+                            reduzca el volumen útil de agua, además, de deterioro en los equipos.
+                            Navegabilidad de sus ríos, debido a la contaminación ambiental algunas fuentes de agua
+                            pierden su
+                            navegabilidad provocando
+                            pérdidas económicas a nivel pesquero.
+                            Perdidas en el sector agrícolas, fuentes hídricas contaminadas no se pueden aprovechar en la
+                            cadena de
+                            producción.
+                            Mayor inversión en salud pública se conoce que al usar agua de mala calidad se incrementa el
+                            riesgo de
+                            enfermedades a la
+                            población.
+                            Desaparición de la vegetación natural, así como la muerte de fauna debido a la contaminación
+                            de ríos,
+                            canales y lagos por las
+                            diferentes actividades productivas al generar diversos desechos durante su desarrollo.
+                            Por otra parte, la descarga directa de aguas residuales a cuerpos de agua limita el uso del
+                            recurso para
+                            diferentes procesos
+                            productivos como el riego o la pesca, el consumo de agua potable y recreación de contacto.
+                            Además, la falta de coordinación entre usuarios y autoridades, aunado a la falta de un
+                            adecuado tratamiento
+                            y reúso de las aguas
+                            residuales generadas producirán una sobreexplotación del recurso, la contaminación de
+                            ecosistemas, la
+                            degradación de los suelos
+                            e impacto negativo sobre la seguridad alimentaria.
+                            Así, el presente proyecto de bioaumentación de microorganismos benéficos para el saneamiento
+                            de las aguas
+                            residuales permitirá
+                            asegurar su recolección, transporte, tratamiento y adecuada disposición en los cuerpos
+                            receptores, en
+                            condiciones que no
+                            perjudiquen al medio ambiente y la salud de la población, disminuyendo los altos costos
+                            derivados en materia
+                            de salud,
+                            ambientales y económicos que se genera por su inadecuado o nulo tratamiento.
+                        </p>
+
+                        <script
+                            src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+
+
+
         <hr>
         <p style="font-weight: bold;">
             ¿Cuáles son los resultados o impactos esperados del proyecto?
@@ -138,32 +185,55 @@
             cantonal y urbano.
         </p>
         <hr>
-        <p style="font-weight: bold;">
-            ¿Análisis de impacto ambiental?
-        </p>
-        <p style=" text-align: justify;">
-            Seguridad y Defensa: dirigido al estudio, generación de conocimiento y desarrollo científico y tecnológico
-            en los diferentes ámbitos
-            de la seguridad, defensa y soberanía nacionales, que permitan defender y/o fortalecer todos aquellos bienes
-            estratégicos para la defensa del país, la sostenibilidad de la vida y la protección de las soberanías:
-            alimentaria,
-            energética, tecnológica, ecológica, del conocimiento, entre otras.
 
-        </p>
-        <hr>
-        <p style="font-weight: bold;">
-            Sostenibilidad social: equidad, género, participación ciudadana
-        </p>
-        <p style=" text-align: justify;">
-            Es importante que los señores estudiantes de la Carrera de Biotecnología, Agropecuaria y Tecnologías de la
-            Información tengan un
-            acercamiento con los tratamientos que se aplican a los diferentes residuos que se producen en los centros
-            poblados y hagan una
-            evaluación de sus diferentes métodos de prevención y remediación, aplicando sus conocimientos a favor de la
-            sociedad y
-            mejorando la calidad de vida de la población.
-
-        </p>
+        <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn " data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                   <strong> ¿Análisis de impacto ambiental?</strong>
+                  </button>
+                </h5>
+              </div>
+        
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    <p style=" text-align: justify;">
+                        Seguridad y Defensa: dirigido al estudio, generación de conocimiento y desarrollo científico y tecnológico
+                        en los diferentes ámbitos
+                        de la seguridad, defensa y soberanía nacionales, que permitan defender y/o fortalecer todos aquellos bienes
+                        estratégicos para la defensa del país, la sostenibilidad de la vida y la protección de las soberanías:
+                        alimentaria,
+                        energética, tecnológica, ecológica, del conocimiento, entre otras.
+            
+                    </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn  collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <strong>Sostenibilidad social: equidad, género, participación ciudadana</strong>
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                    <p style=" text-align: justify;">
+                        Es importante que los señores estudiantes de la Carrera de Biotecnología, Agropecuaria y Tecnologías de la
+                        Información tengan un
+                        acercamiento con los tratamientos que se aplican a los diferentes residuos que se producen en los centros
+                        poblados y hagan una
+                        evaluación de sus diferentes métodos de prevención y remediación, aplicando sus conocimientos a favor de la
+                        sociedad y
+                        mejorando la calidad de vida de la población.
+            
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
     </main>
 
     <footer class="bg-dark text-light text-center py-4  ">

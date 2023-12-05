@@ -1,0 +1,32 @@
+.submenu {
+    display: none; 
+    position: absolute;
+    background-color: #fff; 
+    padding: 10px;
+    border: 1px solid #ced4da; /* Agregar borde */
+    border-radius: 5px; /* Agregar esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agregar sombra */
+    left: 50%;
+    transform: translateX(-30%);
+    width: 220px;
+}
+
+.nav-item {
+    position: relative; /* Asegura que el submenú se posicione relativo a este elemento */
+}
+.lo>a:hover {
+    background-color: #787c80;
+    color: white;
+}
+
+
+
+
+.nav-item:hover .submenu {
+    display: block; /* Mostrar el submenú al pasar el cursor sobre el elemento */
+}
+@media (max-width: 992px) {
+    .navbar-nav .submenu {
+        display: none !important; /* Ocultar los submenús en pantallas pequeñas */
+    }
+}

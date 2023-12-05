@@ -22,11 +22,11 @@ function drawChart() {
   var options = {
     height: data.getNumberOfRows() * 30 + 60,
     gantt: {
-      trackHeight: 30,
+      trackHeight:30,
       labelMaxWidth: 300,
       barHeight: 20,
       monthLabelFormat: '%b %Y',
-      scaleType: 'all'
+      scaleType: 'all',
     }
   };
 

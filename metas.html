@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="estilo_general.css">
     <script src="script_general.js"></script>
-    <!-- Incluye jQuery primero -->
+    <link rel="stylesheet" href="barra_nav.css">
     <script src="JS-Animaciones/jQuery v3.7.0.js"></script>
     <!-- Luego, incluye Bootstrap -->
     <script src="js/bootstrap.min.js"></script>
@@ -39,6 +39,11 @@
                 </li>
                 <li class="nav-item col-lg-2  text-center">
                     <a class="nav-link" href="metas.html">Metas</a>
+                    <ul class="submenu">
+                        <lo class="lo"><a class="nav-link" href="#Matriz">Matriz del marco lógico</a></lo>
+                        <lo class="lo"><a class="nav-link" href="#Componentes">Componentes</a></lo>   
+                        <lo class="lo"><a class="nav-link" href="#Actividades">Actividades</a></lo>    
+                    </ul>
                 </li>
                 <li class="nav-item col-lg-2  text-center">
                     <a class="nav-link" href="resultados.html">Resultados</a>
@@ -53,7 +58,7 @@
         </div>
     </nav>
     <main class="container-sm  py-5">
-        <h3>Matriz del marco lógico</h3>
+        <h3 id="Matriz">Matriz del marco lógico</h3>
 
         <table class="table table-bordered table-striped mt-4">
             <thead>
@@ -92,7 +97,7 @@
                 </tr>
             </tbody>
         </table>
-        <p style="font-weight: bold;">Componentes</p>
+        <p id="Componentes" style="font-weight: bold;">Componentes</p>
         <table class="table table-bordered table-striped ">
             <thead>
                 <tr>
@@ -114,7 +119,7 @@
                 </tr>
             </tbody>
         </table>
-        <p style="font-weight: bold;">Actividades</p>
+        <p id="Actividades" style="font-weight: bold;">Actividades</p>
         <table class="table table-bordered table-striped ">
             <thead>
                 <tr>
