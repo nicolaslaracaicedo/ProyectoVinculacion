@@ -30,3 +30,26 @@
         display: none !important; /* Ocultar los submenús en pantallas pequeñas */
     }
 }
+
+
+.rounded-button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    position: fixed; /* Fija la posición */
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+    left: 20px; /* Ajusta la distancia desde la izquierda */
+  }
+  .rounded-button:hover {
+    background-color: #0056b3; /* Cambia el color al hacer hover */
+  }
+  .modal-lg {
+    max-width: 90%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+  

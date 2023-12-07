@@ -1,0 +1,123 @@
+/* Estilos similares al modal de Bootstrap */
+.custom-modal {
+    display: none;
+    position: fixed;
+    z-index: 1050;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+  
+  .custom-modal-dialog {
+    display: flex;
+    flex-direction: column;
+    margin: 1.75rem auto; /* Ajusta la posición vertical */
+    max-width: 1000px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .custom-modal-content {
+    flex: 1;
+    padding: 1rem;
+    overflow: auto;
+  }
+  
+  .custom-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .custom-modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.25rem;
+  }
+  
+  .custom-close {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    opacity: .5;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: 0;
+  }
+  
+  .custom-close:focus,
+  .custom-close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+  }
+  
+  .custom-modal-body {
+    position: relative;
+    padding: 1rem;
+  }
+  
+  .custom-modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+    border-top: 1px solid #dee2e6;
+  }
+  
+  .custom-modal-footer button {
+    margin-left: 0.25rem;
+  }
+  
+  /* Otros estilos de Bootstrap que puedan ser necesarios */
+  /* ... */
+  #openModalBtn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  
+  #openModalBtn:hover {
+    background-color:  #007bff;
+    border-top-right-radius: 0; /* Cambiamos el radio de la esquina derecha */
+    border-bottom-right-radius: 0; /* Cambiamos el radio de la esquina derecha */
+  }
+/* Agregar animaciones */
+@keyframes slideInFromTop {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Aplicar animación al mostrar el modal */
+  .custom-modal {
+    display: none;
+  }
+  
+  .custom-modal.show {
+    display: block;
+    animation: slideInFromTop 0.3s ease-in-out;
+  }
+  
+  
